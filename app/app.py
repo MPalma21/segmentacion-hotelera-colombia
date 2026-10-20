@@ -11,7 +11,7 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "processed"
 # Definición de Interfaz de Usuario (UI)
 app_ui = ui.page_navbar(
     ui.nav_panel(
-        "🗺️ Mapa Territorial",
+        "Mapa Territorial",
         ui.layout_sidebar(
             ui.sidebar(
                 ui.h4("Filtros Territoriales"),
@@ -37,7 +37,7 @@ app_ui = ui.page_navbar(
         )
     ),
     ui.nav_panel(
-        "📊 Perfiles de Clústeres",
+        "Perfiles de Clústeres",
         ui.layout_columns(
             ui.card(
                 ui.card_header("Oferta vs. Demanda Turística"),
@@ -50,7 +50,7 @@ app_ui = ui.page_navbar(
         )
     ),
     ui.nav_panel(
-        "🏨 Directorio Priorizado de Hoteles",
+        "Directorio Priorizado de Hoteles",
         ui.card(
             ui.card_header("Listado de Establecimientos Segmentados"),
             ui.output_table("tabla_hoteles")
